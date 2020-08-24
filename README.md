@@ -11,7 +11,7 @@
 
 > **NOTE**: This demo does not perform true PKI. This application doesn't perform revocation checks.
 
-This application was created to demonstrate how NGINX and Flask can be configured to utilize DoD Common Access Card (CAC) authentication. NGINX will prompt the browser for a certificate which is then passed onto the application for further processing (i.e. EDIPI mapping to User Account). 
+This application was created to demonstrate how NGINX and Flask can be configured to utilize DoD Common Access Card (CAC) for authentication. NGINX will prompt the browser for a certificate which is then passed onto the application for further processing (i.e. EDIPI mapping to a User Account). 
 
 To make this application closer to production ready, certificate checks need to be performed prior to authentication. This is done via Certificate Revocation Checks and can be accomplished within NGINX with some additional configurations.
 
@@ -23,7 +23,7 @@ In order to run this demo on your workstation you will need the following prereq
 * Docker
 * OpenSSL
 
-Once the prerequisites have been furfilled, the following steps need to be followed:
+Once the prerequisites have been fulfilled, the following steps need to be followed:
 
 1. Determine a hostname to use for the demo (eg. `demo.domain.com`)
 
@@ -31,7 +31,7 @@ Once the prerequisites have been furfilled, the following steps need to be follo
 
 3. Ensure your workstation is configured to use CAC. For example, when you navigate to OWA, you get prompted for a CAC. For more help on this visit [MilitaryCac](https://militarycac.com)
 
-4. Using the directions below, generate Self-Signed Certs for `demo.domain.com`. Be sure to complete all the steps to include modifing the `Dockerfile` and `nginx.conf`
+4. Using the directions below, generate Self-Signed Certs for `demo.domain.com`. Be sure to complete all the steps to include modifying the `Dockerfile` and `nginx.conf`
 
 5. Navigate your terminal to the directory containing the `docker-compose.yml` file and run `docker-compose up --build -d`
 
@@ -39,9 +39,9 @@ Once the prerequisites have been furfilled, the following steps need to be follo
 
 ## SSL Certificate
 
-The SSL Certificate used in this demonstration is a **Self-Signed Certificate**. This certificate can be easily replaced following using traditional certifcate request guidelines.
+The SSL Certificate used in this demonstration is a **Self-Signed Certificate**. This certificate can be easily replaced following using traditional certificate request guidelines.
 
-On a workstation with **OpenSSL** installed, use the following steps to generate new Self-Signed Certifcates.
+On a workstation with **OpenSSL** installed, use the following steps to generate new Self-Signed Certificates.
 
 1. Generate a CSR and Private Key
 
