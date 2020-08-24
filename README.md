@@ -1,4 +1,4 @@
-# Docker + Flask (Python) + CAC Demo
+# Docker + Flask + CAC Demo
 
 Demo Application demonstrating DoD CAC Authentication
 
