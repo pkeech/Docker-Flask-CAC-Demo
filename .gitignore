@@ -9,6 +9,9 @@ __pycache__/
 ## IGNORE VSCODE FILES
 *.code-workspace
 
+## IGNORE MACOS
+.DS_Store
+
 # Distribution / packaging
 .Python
 build/
