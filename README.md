@@ -1,4 +1,4 @@
-# Docker + Flask (Python) + CAC Demo
+# Docker + Flask + CAC Demo
 
 ### Table of Contents
 
