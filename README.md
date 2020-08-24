@@ -9,7 +9,7 @@
 
 ## Description
 
-> **NOTE**: This demo isn't a true PKI as this application doesn't perform revocation checks.
+> **NOTE**: This demo does not perform true PKI. This application doesn't perform revocation checks.
 
 This application was created to demonstrate how NGINX and Flask can be configured to utilize DoD Common Access Card (CAC) authentication. NGINX will prompt the browser for a certificate which is then passed onto the application for further processing (i.e. EDIPI mapping to User Account). 
 
