@@ -1,0 +1,22 @@
+version: "3.7"
+
+## DEFINE SERVICES
+services:
+
+  ## NGINX (WEB SERVER)
+  nginx:
+    build: 
+      context: ./Server
+      target: Production
+    image: pkeech/example_nginx:dev
+    ports:
+      - "443:443"
+    volumes:
+      - "./Server/nginx.conf:/etc/nginx/conf.d/nginx.conf"
+
+  ## APP (FLASK)
+  web:
+    build: 
+      context: ./App
+      target: Production
+    image: pkeech/example_web:dev
