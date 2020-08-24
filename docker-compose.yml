@@ -8,7 +8,7 @@ services:
     build: 
       context: ./Server
       target: Production
-    image: pkeech/example_nginx:dev
+    image: pkeech/flask_cac_nginx:latest
     ports:
       - "443:443"
     volumes:
@@ -19,4 +19,4 @@ services:
     build: 
       context: ./App
       target: Production
-    image: pkeech/example_web:dev
+    image: pkeech/flask_cac_web:latest

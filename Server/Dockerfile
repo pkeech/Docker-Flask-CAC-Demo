@@ -11,8 +11,8 @@ RUN rm /etc/nginx/conf.d/default.conf
 RUN mkdir -p /etc/ssl/certs
 ## TODO: Determine Best Approach To Include SSL Certificates.
 COPY ./ssl/DoD_CAs.pem /etc/ssl/certs
-COPY ./ssl/serverbuilder.pem /etc/ssl/certs
-COPY ./ssl/serverbuilder.key /etc/ssl/certs
+COPY ./ssl/demo.domain.com.pem /etc/ssl/certs
+COPY ./ssl/demo.domain.com.key /etc/ssl/certs
 ## TODO: Determine Best Approach To Include SSL Certificates
 COPY nginx.conf /etc/nginx/conf.d/
 

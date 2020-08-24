@@ -17,7 +17,10 @@ app = Flask(__name__)
 logger.info('Starting Application ...')
 
 ## Load Flask App Configurations
-#app.config.from_object('src.celeryconfig')
+#app.config.from_object('src.config')
 
 ## Import Views (After App Initialzed)
 from src import views
+
+## LOG APPLICATION START UP
+logger.info('Application Started')

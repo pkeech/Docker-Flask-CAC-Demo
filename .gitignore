@@ -9,6 +9,9 @@ __pycache__/
 ## IGNORE VSCODE FILES
 *.code-workspace
 
+## IGNORE CERTS
+demo.domain.com.*
+
 ## IGNORE MACOS
 .DS_Store
 
