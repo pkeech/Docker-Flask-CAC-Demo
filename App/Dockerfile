@@ -13,7 +13,7 @@ COPY . /app
 
 ## DEV IMAGE
 FROM Dependencies AS Development
-LABEL Maintainer="Peter Keech <pkeech@ngds.com>"
+LABEL Maintainer="Peter Keech <peter.a.keech@gmail.com>"
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 ENV FLASK_ENV=development 
